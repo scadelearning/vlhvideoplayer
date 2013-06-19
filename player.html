@@ -11,7 +11,7 @@
       if (event == 'ready') {
 	player = document.getElementById("livestreamPlayer");
       	player.setDevKey('MZUN4xPlca0_JoIPR882gywpzzbML8_4oI6Xt2LeKIVVwa7LEhnbFZH2X1osyv59jraml9N3UuAaDA40zrfWDWgYCFlf1792-6ClImxxV_3FTeca5iswWeOyqT0iTTat');
-      	player.load('scad');	
+      	player.load('scad','flv_2d15d777-278e-4e38-a40d-a5db0535ae84');
       }
  
       log = document.getElementById('log');
@@ -23,8 +23,13 @@
 </head>
 <body>
   <div id="livestreamPlayer">
-  <h1>This page requires flash</h1>
-    <p><a href="http://www.adobe.com/go/getflashplayer">download flash</a></p>
+  <video width="300" height="225" 
+   src="http://www.livestream.com/scad/video?clipId=flv_3a66960f-5284-4b10-9ca9-63bf9cdbf4a0" 
+   poster="http://www.livestream.com/filestore/user-files/chscad/2012/02/24/3a66960f-5284-4b10-9ca9-63bf9cdbf4a0_1.jpg" 
+   controls="" 
+   autoplay="true" 
+   tabindex="0">
+</video>
   </div>
   <br/>
   <input type="button" value="play" onclick="player.startPlayback()"/>
